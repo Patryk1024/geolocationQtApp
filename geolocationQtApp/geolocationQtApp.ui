@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>geolocationQtAppClass</class>
+ <widget class="QMainWindow" name="geolocationQtAppClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>geolocationQtApp</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>581</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAPI">
+    <property name="title">
+     <string>Data</string>
+    </property>
+    <addaction name="actionAPI"/>
+    <addaction name="actionAdd_IP_Geolocation"/>
+    <addaction name="actionRemove_IP_Geolocation"/>
+   </widget>
+   <widget class="QMenu" name="menuDatabase">
+    <property name="title">
+     <string>Database</string>
+    </property>
+    <addaction name="actionReinitialize"/>
+    <addaction name="actionRemove_database"/>
+   </widget>
+   <addaction name="menuAPI"/>
+   <addaction name="menuDatabase"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAPI">
+   <property name="text">
+    <string>Get IP data from API</string>
+   </property>
+  </action>
+  <action name="actionAdd_IP_Geolocation">
+   <property name="text">
+    <string>Add IP Geolocation</string>
+   </property>
+  </action>
+  <action name="actionRemove_IP_Geolocation">
+   <property name="text">
+    <string>Remove IP Geolocation</string>
+   </property>
+  </action>
+  <action name="actionReinitialize">
+   <property name="text">
+    <string>Reinitialize database</string>
+   </property>
+  </action>
+  <action name="actionRemove_database">
+   <property name="text">
+    <string>Remove database</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="geolocationQtApp.qrc"/>
+ </resources>
+ <connections/>
+</ui>
